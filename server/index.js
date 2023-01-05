@@ -2,20 +2,17 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
+const login = require("./Routers/deez.js")
+
 require("dotenv").config();
 
 DB_KEY = process.env.MONGO_KEY;
 
 app.use(cors());
 app.use(express.json());
+app.use(login);
 
-const uri = `mongodb+srv://Test123:${DB_KEY}@cluster0.ujggnnh.mongodb.net/?retryWrites=true&w=majority`;
-
-const accountSchema = {
-  name: String,
-  password: String,
-  confirmPass: String,
-};
+const uri = `mongodb+srv://Test123:${DB_KEY}@cluster0.ujggnnh.mongodb.net/Omok?retryWrites=true&w=majority`;
 
 app.get("/", (req, res) => {
   res.send("hello world");
