@@ -17,7 +17,7 @@ export default function CreateAcc() {
   }
 
   function sendLoginInfo() {
-    fetch("http://localhost:8000/signup", {
+    fetch("http://localhost:8000/login", {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(newAccount),

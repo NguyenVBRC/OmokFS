@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-import { classLinksLegion } from '../../Data/LinksLegionData';
+// import { classLinksLegion } from '../../Data/LinksLegionData';
 import "./Home.css"
 import legion from "../../images/legion.png"
 import hhg1 from "../../images/hhg1.png"
@@ -8,16 +8,8 @@ import cashshop from "../../images/cashshop.png"
 
 export default function Home() {
 
-  const linksDisplay = classLinksLegion.map((data)=> {
-    return (
-      <div>
-        <p key={data.jobTitle}>{data.jobTitle}</p>
-      </div>
-    )
-  })
-
   return (
-    <main className='grid__container'>
+    <div className='grid__container'>
         <section className='content__display'>
           <Link to="/LinksAndLegion">
             <h1>Links and Legion</h1>
@@ -44,6 +36,6 @@ export default function Home() {
           </div>
         </Link>
       </section>
-    </main>
+    </div>
   )
 }

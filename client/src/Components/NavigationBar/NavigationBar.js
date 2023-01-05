@@ -9,7 +9,7 @@ export default function NavigationBar() {
   return (
     <>
       <nav className='nav__bar'>
-          <Link to="/">
+          <Link to="/OmokFS">
             <img 
               src={require(`../../images/mushroom.${imageType}`)} 
               id="nav__logo" 
@@ -23,14 +23,14 @@ export default function NavigationBar() {
             <p>A MapleStory Resource Page</p>
           </header>
           <div id='nav__links'>
-            <Link to="/">Home</Link>
+            <Link to="/OmokFS">Home</Link>
             <Link to="/LinksAndLegion">Links Legion</Link>
             <Link to="/TrainingMaps">Training</Link>
             <Link to="/CashShopSharedInventory">Shared CS</Link>
             <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
           </div>
           <div className='side__bar'>
-            <Link to="/">
+            <Link to="/OmokFS">
               <img src={require("../../images/home.png")} alt="home"/>
               <span>Home</span>
             </Link>
