@@ -29,7 +29,6 @@ export default function SignIn() {
     } else {
       console.log("Login Failed")
     }
-    console.log(userDetails)
   }
 
   return (

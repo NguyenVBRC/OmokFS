@@ -1,6 +1,6 @@
-export const classData = {
+export const cashShopInventory = {
   Explorer: {
-    Warrior: ["Hero", "Dark Knight", "Paladin"],
+    Warrior: ["Hero", "Dark Knight", ""],
     Bowmen: ["Marksman", "Bowmaster", "Pathfinder"],
     Magician: ["Bishop", "Ice Lightning", "Fire Poison"],
     Thief: ["Dual Blade", " Night Lord", "Shadower"],
