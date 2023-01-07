@@ -13,5 +13,5 @@ const accountSchema = new mongoose.Schema({
     }
 });
 
-const Login = mongoose.model("DeezNaughts", accountSchema);
-module.exports = Login;
+const CreateAcc = mongoose.model("OmokAccount", accountSchema);
+module.exports = CreateAcc;

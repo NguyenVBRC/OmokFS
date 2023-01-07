@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
-const login = require("./Routers/deez.js")
+const login = require("./Routers/router.js")
 
 require("dotenv").config();
 
