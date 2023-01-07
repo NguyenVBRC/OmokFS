@@ -9,6 +9,7 @@ export default function CreateAcc() {
     confirmPass: ""
   });
   
+  // Updates ID/Pass in State
   function accountInfo(e) {
     setNewAccount({
       ...newAccount,
@@ -16,8 +17,9 @@ export default function CreateAcc() {
     });
   }
 
+  // Sends post request to Server
   function sendLoginInfo() {
-    fetch("http://localhost:8000/login", {
+    fetch("http://localhost:8000/CreateAcc", {
       method: 'POST',
       mode: 'cors',
       body: JSON.stringify(newAccount),
@@ -27,6 +29,7 @@ export default function CreateAcc() {
     })
   }
 
+  // Checks if passwords match to successfully create account
   function handleSubmit(e) {
     e.preventDefault();
     if (newAccount.password !== newAccount.confirmPass) {
@@ -35,7 +38,7 @@ export default function CreateAcc() {
     } else {
       setPassCheck("Success!")
       console.log(JSON.stringify(newAccount));
-      sendLoginInfo() 
+      sendLoginInfo() // Sends Login info to Server to store in MongoDB
     }
   }
   

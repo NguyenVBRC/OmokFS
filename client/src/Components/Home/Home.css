@@ -39,11 +39,15 @@
 .inner__display {
     border-radius: 10px;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner__display img {
     border-radius: 10px;
     border: solid 2px black;
+    width: 80%;
 }
 
 @media (max-width: 1300px){

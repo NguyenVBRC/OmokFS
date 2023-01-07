@@ -22,12 +22,37 @@
     border-radius: 10px;
 }
 
+.entries__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 55vh;
+    width: 100%;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    border: solid 1px black;
+    /* box-shadow: inset 0px -10px 10px -5px #888888; */
+}
+
+.category__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 300px;
+}
+
+#subclass__indicator {
+    font-weight: bold;
+}
+
 @media (max-width: 1300px){
     .inventory__container {
         top: 25vh;
         height: 70vh;
-        overflow-y: scroll;
-        box-shadow: inset 0px -10px 10px -5px #888888;
     }
 
     /* Hiding Scroll Bar */

@@ -15,6 +15,7 @@ export default function SignIn() {
     password: "tooHard"
   }
 
+  // Takes login info and compares to DB. Checks if account exists
   function compareCredentials(e){
     setUserDetails({
       ...userDetails, 
@@ -22,8 +23,21 @@ export default function SignIn() {
     })
   }
 
-  function handleSubmit(e){
+  // Sends GET request to Sever
+  function sendLoginInfo() {
+    fetch("http://localhost:8000/login", {
+      method: 'POST',
+      mode: 'cors',
+      body: JSON.stringify(newAccount),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+  }
+  
+  async function handleSubmit(e){
     e.preventDefault();
+
     if (userDetails.username === fakeDB.username && userDetails.password === fakeDB.password) {
       console.log("Login Successful")
     } else {
