@@ -9,5 +9,5 @@ To easily visit the page, please click [Here](https://nguyenvbrc.github.io/OmokP
 # How to Get Started
 Download files > CD into the Client > NPM Start
 
-# Want to see the page?
+### Want to see the page?
 You can see the clientside hosted [here](https://nguyenvbrc.github.io/OmokPlace/)
