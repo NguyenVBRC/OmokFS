@@ -12,7 +12,7 @@ export default function Home() {
     <div className='grid__container'>
         <section className='content__display'>
           <Link to="/LinksAndLegion">
-            <h1>Links and Legion</h1>
+            <h1>Links / Legion</h1>
             <div className='inner__display'>
               <img src={legion} alt="legion card" />
             </div>
@@ -30,7 +30,7 @@ export default function Home() {
 
       <section  className='content__display'>
         <Link to="/CashShopSharedInventory">
-          <h1>Shared Cash Shop</h1>
+          <h1>Cash Shop</h1>
           <div className='inner__display'>
             <img src={cashshop} alt="legion card" />
           </div>

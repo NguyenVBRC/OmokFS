@@ -14,9 +14,9 @@ body {
     position: relative;
 }
 
-.main {
+/* .main {
     height: 100vh;
-}
+} */
 
 .content__container {
     display: flex;

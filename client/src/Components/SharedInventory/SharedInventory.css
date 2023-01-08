@@ -60,3 +60,11 @@
         display: none;
     }
 }
+
+@media (max-width: 600px){
+    .inventory__container{
+        width: 80%;
+        margin: 0 1rem;
+        overflow-y: hidden;
+    }
+}

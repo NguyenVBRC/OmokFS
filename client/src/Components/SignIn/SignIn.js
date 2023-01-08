@@ -24,15 +24,17 @@ export default function SignIn() {
   }
 
   // Sends GET request to Sever
-  function sendLoginInfo() {
-    fetch("http://localhost:8000/login", {
-      method: 'POST',
-      mode: 'cors',
-      body: JSON.stringify(newAccount),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
+  function accountExists() {
+    fetch("http://localhost:8000/logincheck")
+      .then((response)=>{
+        if (!response.ok){
+          throw new Error(`HTTP error ${response.status}`);
+        }
+      }).then((data)=>{
+        console.log(data);
+      }).catch((error)=>{
+        console.error(error)
+      })
   }
   
   async function handleSubmit(e){
