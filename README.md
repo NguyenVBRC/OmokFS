@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/98493892/211601180-c57c7b23-4839-4ab6-8a0b-dee148d7b521.png)
 
 ## Technologies 
-![image](https://user-images.githubusercontent.com/98493892/211602376-9b4b59e1-1ccf-4cfb-9bcc-54aec60971c6.png)
+![image](https://user-images.githubusercontent.com/98493892/211602376-9b4b59e1-1ccf-4cfb-9bcc-54aec60971c6.png)\
 MongoDb, Express, React, Node
 
 ## Description
