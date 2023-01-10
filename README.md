@@ -1,6 +1,8 @@
 # An MMORPG Resource Page.
 ![image](https://user-images.githubusercontent.com/98493892/211601180-c57c7b23-4839-4ab6-8a0b-dee148d7b521.png)
 
+
+## Description
 Information is scattered everywhere.\
 A player must search through multiple resources to find what they need.
 
