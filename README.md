@@ -9,6 +9,9 @@ A player must search through multiple resources to find what they need.
 By creating a resource that provides the necessary resources in one area, I reduced search time and increased player efficiency in the community.
 To easily visit the page, please click [here](https://nguyenvbrc.github.io/OmokPlace/).
 
+## Technologies 
+MongoDb, Express, React, Node
+
 # How to view the code
 Clone files > CD into the Client > NPM Start
 
