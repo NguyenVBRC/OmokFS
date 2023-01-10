@@ -14,8 +14,5 @@ By gathering all of the most frequently searched and used information, I was abl
 By creating a resource that provides the necessary resources in one area, I reduced search time and increased player efficiency in the community.
 To easily visit the page, please click [here](https://nguyenvbrc.github.io/OmokPlace/).
 
-# How to view the code
-Clone files > CD into the Client > NPM Start
-
 ## Want to see the page?
 You can see the clientside hosted [here](https://nguyenvbrc.github.io/OmokPlace/).
