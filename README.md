@@ -10,6 +10,7 @@ By creating a resource that provides the necessary resources in one area, I redu
 To easily visit the page, please click [here](https://nguyenvbrc.github.io/OmokPlace/).
 
 ## Technologies 
+![image](https://user-images.githubusercontent.com/98493892/211602376-9b4b59e1-1ccf-4cfb-9bcc-54aec60971c6.png)
 MongoDb, Express, React, Node
 
 # How to view the code
