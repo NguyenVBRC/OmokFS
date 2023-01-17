@@ -24,22 +24,17 @@ export default function SignIn() {
   }
 
   // Sends GET request to Sever
-  function accountExists() {
-    fetch("http://localhost:8000/logincheck")
-      .then((response)=>{
-        if (!response.ok){
-          throw new Error(`HTTP error ${response.status}`);
-        }
-      }).then((data)=>{
-        console.log(data);
-      }).catch((error)=>{
-        console.error(error)
-      })
+  function accountExists(e) {
+    e.preventDefault();
+    fetch("http://localhost:8000/CreateAcc")
+      .then(res => res.json())
+      .then(data => console.log(data))
   }
   
-  async function handleSubmit(e){
-    e.preventDefault();
-
+  function handleSubmit(e){
+    // Prevents page refresh
+    e.preventDefault(); 
+    // Compares account input to account data in db
     if (userDetails.username === fakeDB.username && userDetails.password === fakeDB.password) {
       console.log("Login Successful")
     } else {
@@ -62,7 +57,8 @@ export default function SignIn() {
             <button 
               type='submit' 
               id='sign__in__btn' 
-              onClick={handleSubmit}
+              // onClick={handleSubmit}
+              onClick={accountExists}
             >
               Log In
             </button>
