@@ -27,7 +27,8 @@ export default function NavigationBar() {
             <Link to="/LinksAndLegion">Links Legion</Link>
             <Link to="/TrainingMaps">Training</Link>
             <Link to="/CashShopSharedInventory">Shared CS</Link>
-            <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link>
+            {/* <Link to="/SignIn" style={{backgroundColor:"#42b72a", color:"white"}}>Sign In</Link> */}
+            <Link to="/Tracker">Tracker</Link>
           </div>
           <div className='side__bar'>
             <Link to="/OmokFS">
@@ -46,10 +47,11 @@ export default function NavigationBar() {
               <img src={require("../../images/storage.png")} alt="cash shop storage"/>
               <span>Shared Cash Shop</span>
             </Link>
-            <Link to="/SignIn">
+            {/* <Link to="/SignIn">
               <img src={require("../../images/profile.png")} alt="profile"/>
               <span>Log In</span>
-            </Link>
+            </Link> */}
+            
           </div>
       </nav>
       <img src={require("../../images/banner.png")} id="banner" alt="Reddit Banner"/>

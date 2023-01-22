@@ -1,0 +1,39 @@
+.tracker__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+    top: 22vh;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid 1px lightslategray;
+    border-radius: 10px;
+}
+
+#tracker__title {
+    text-align: center;
+    height: 10%;
+}
+
+#reminder__container {
+    display: flex;
+}
+
+#reminder__items {
+    height: 70%;
+    width: 90%;
+    border: solid 1px lightslategray;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#tracker__events {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
